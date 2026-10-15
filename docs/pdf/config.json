@@ -1,7 +1,7 @@
 {
   "product": "Levels",
   "pcbVersion": "v1.0",
-  "repo": "schenkzoola/ST02-levels",
+  "repo": "Schenktronics/ST02-levels",
   "branch": "master",
   "documents": [
     { "src": "manual.md", "out": "levels-manual.pdf", "title": "User Manual" },
