@@ -39,9 +39,10 @@ hardware/
     LevelsFaceplate.kicad_pcb    Faceplate layout
     LevelsFaceplate.step         3D model
 docs/                          Manual, assembly guide, BOM, images
-  drawings/                      Scripts that generate the drawings
-  pdf/                           PDF versions and their build settings
+  pdf/                           PDF versions of the manual and assembly guide
 ```
+
+The `.github/` folder holds the automation that builds the PDFs. You can ignore it.
 
 ## Fabrication
 
