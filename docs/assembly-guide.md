@@ -72,6 +72,8 @@ Turn the whole thing over and solder from the back of the PCB.
 3. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
 4. Snug the nuts down. Don't overtighten: it can strip the jack threads or damage the panel.
 
+> **Using panel-mount style jacks?** The oval pads also take jacks like the CUI MJ-3507. Their tip and switch pins go into the board, but the sleeve is a solder lug on the jack, not a pin. Tack the tip pin instead of the square pad, then solder a short wire from each jack's sleeve lug to its square pad. Without the wire, the jack has no ground.
+
 <img src="images/assembly-3-solder.svg" alt="Back of the PCB: one pad per part to tack first is filled red, and the other pads, including the pot lugs, are outlined in red" width="640">
 
 Look over every joint before moving on. Each should be shiny and cone-shaped, with no solder bridging neighboring pads.
