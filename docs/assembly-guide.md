@@ -2,8 +2,6 @@
 
 This kit takes about 20-30 minutes and 22 solder joints. There are no polarized parts, and the pots only fit one way, so it makes a good first Eurorack build.
 
-**Prefer to watch?** There's a video of the whole build: [Watch me solder together a passive attenuator module!](https://www.youtube.com/watch?v=RKkGsIigaSM)
-
 <img src="images/outline-bare-parts.svg" alt="The faceplate and the bare PCB, before assembly" width="260">
 
 ## What you need

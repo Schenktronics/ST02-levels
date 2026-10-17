@@ -65,7 +65,4 @@ The Schenktronics name and logo are trademarks of Schenktronics LLC and are not 
 
 - Shop: <https://schenktronics.com/product/st-02/>
 - Docs page: <https://schenktronics.com/docs/st-02/>
-- Tindie: <https://www.tindie.com/products/schenktronics/passive-attenuator/>
-- ModularGrid: <https://modulargrid.net/e/schenktronics-atten>
-- Build video: <https://www.youtube.com/watch?v=RKkGsIigaSM>
 - Website: <https://schenktronics.com>
