@@ -85,7 +85,7 @@ def parse(path):
                 dw = dh = 0.0
             # A pad's own `at` rotation is local to its footprint (added to
             # the footprint's placement angle), unlike KiCad 5/6 files where
-            # it was stored absolute — confirmed against this file: a jack
+            # it was stored absolute. Confirmed against this file: a jack
             # footprint at 90° has oval pads locally rotated to 270° so the
             # combined, on-board angle comes out to 0° (pad drawn "upright",
             # matching the oval shown in the KiCad 3D view).
@@ -211,7 +211,7 @@ def fig_parts(outline, parts):
     """Step 1: pots and jacks go in from the front, not soldered yet."""
     h = outline[2] - outline[0]
     v = BoardView(outline, 0, 8, front=True)
-    body = view_title(0, 2.5, "Front (part side)", "Fit RV1, RV2 and J1–J4. Don't solder yet.")
+    body = view_title(0, 2.5, "Front (part side)", "Fit RV1, RV2, and J1-J4. Don't solder yet.")
     body += v.board()
     for p in parts:
         for pad in p["pads"]:
@@ -280,7 +280,7 @@ def fig_faceplate(outline, parts):
     body.append(text(lx, nut_y + 1.1, "Jack nuts", 2.6, "bold"))
     body.append(text(lx, nut_y + 4.3, "finger-tight first", 2.2, color=GREY))
     body.append(text(lx, panel_y + 0.8, "Faceplate", 2.6, "bold"))
-    body.append(text(lx, panel_y + 4, "“Atten.” end over RV1", 2.2, color=GREY))
+    body.append(text(lx, panel_y + 4, "\"Levels\" end over RV1", 2.2, color=GREY))
     body.append(text(lx, body_top + 3, "Pots and jacks", 2.6, "bold"))
     body.append(text(lx, body_top + 6.2, "not soldered yet", 2.2, color=GREY))
     body.append(text(lx, pcb_y + 0.8, "PCB", 2.6, "bold"))

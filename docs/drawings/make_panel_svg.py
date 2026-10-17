@@ -229,14 +229,14 @@ def annotated(outline, holes, *silk):
     body += label(o2, "Out 2", "bold ring = output", x1 - 3)
     pad = 4
     return svg((x0 - pad, y0 - pad, (x1 - x0) + 44 + pad, (y1 - y0) + 2 * pad), body,
-               "Passive Attenuator front panel")
+               "ST-02 Levels front panel")
 
 
 def plain(outline, holes, *silk):
     x0, y0, x1, y1 = outline
     pad = 1
     return svg((x0 - pad, y0 - pad, (x1 - x0) + 2 * pad, (y1 - y0) + 2 * pad), panel_body(outline, holes, *silk),
-               "Passive Attenuator front panel")
+               "ST-02 Levels front panel")
 
 
 def main():

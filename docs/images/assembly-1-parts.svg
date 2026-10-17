@@ -2,7 +2,7 @@
 <title>Step 1: fit the pots and jacks</title>
 <rect x='-3' y='-3' width='106' height='31.0' fill='#fff'/>
 <text x='0.00' y='2.50' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='3' font-weight='bold' fill='#1a1a1a' text-anchor='start' dominant-baseline='central'>Front (part side)</text>
-<text x='0.00' y='6.10' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>Fit RV1, RV2 and J1–J4. Don't solder yet.</text>
+<text x='0.00' y='6.10' font-family='DejaVu Sans, Helvetica, Arial, sans-serif' font-size='2.2' font-weight='normal' fill='#888' text-anchor='start' dominant-baseline='central'>Fit RV1, RV2, and J1-J4. Don't solder yet.</text>
 <rect x='0' y='8' width='100.0' height='15.0' rx='0.6' fill='#f1f1f1' stroke='#1a1a1a' stroke-width='0.35'/>
 <rect x='38.500' y='14.000' width='3.0' height='3.0' rx='1.5' fill='#fff' stroke='#888' stroke-width='0.15'/>
 <rect x='39.085' y='21.012' width='1.83' height='1.93' rx='0.15' fill='#d6d6d6' stroke='#888' stroke-width='0.15'/>

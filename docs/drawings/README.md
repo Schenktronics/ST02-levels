@@ -23,7 +23,7 @@ python3 docs/drawings/make_panel_svg.py
 | From the KiCad file | Used for |
 |---------------------|----------|
 | `Edge.Cuts` lines | Panel outline |
-| Mounting-hole footprints and their drill sizes | Jacks (Ø6.0), the knobs (Ø7.0) and the rack screw holes |
+| Mounting-hole footprints and their drill sizes | Jacks (6.0 mm), the knobs (7.0 mm), and the rack screw holes |
 | `F.SilkS` lines and text | The divider line and the labels |
 | `F.SilkS` circles | The rings around the jacks: a thin ring marks an input, a bold ring an output |
 | The `SchentronicsLogo` footprint | The logo, read as its silkscreen polygons and placed at the footprint's position and rotation |
@@ -46,7 +46,7 @@ python3 docs/drawings/make_assembly_svgs.py
 | `assembly-2-faceplate.svg` | Side diagram. The part positions along the board come from the PCB file, and the heights are approximate. |
 | `assembly-3-solder.svg` | Back board view, drawn from the PCB file |
 
-Like the panel script, it reads `Levels.kicad_pcb` with the same generic S-expression parser (imported from `make_panel_svg.py`), not regexes — the main PCB file is KiCad 10 format too. It only keeps footprints whose reference starts with `RV` or `J`, so non-component footprints (e.g. the Schenktronics logo artwork on the back silkscreen) don't get drawn as if they were parts.
+Like the panel script, it reads `Levels.kicad_pcb` with the same generic S-expression parser (imported from `make_panel_svg.py`), not regexes, since the main PCB file is KiCad 10 format too. It only keeps footprints whose reference starts with `RV` or `J`, so non-component footprints (e.g. the Schenktronics logo artwork on the back silkscreen) don't get drawn as if they were parts.
 
 The side view assumes the faceplate sits 12.5 mm further up than the PCB, matching the two KiCad files. If you move the parts on either board, update `OFFSET` near the top of the figures section.
 
@@ -71,9 +71,9 @@ python3 docs/drawings/make_patch_svgs.py
 
 ## Outline drawings
 
-`outline-front.svg`, `outline-side.svg`, one `outline-iso-{top,bottom}-{left,right}.svg` per corner, and `outline-bare-parts.svg` (the panel and bare PCB side by side, for the assembly guide's "before you start" shot) are real projections straight from [`ST-02_Levels.step`](../../hardware/ST-02_Levels.step) in `hardware/` — not diagrams. They replace the old product photos in the README, manual and assembly guide. All four isometric corners are generated every run so there's always a fresh set to pick a hero shot from; `outline-iso-top-left.svg` is the one currently used.
+`outline-front.svg`, `outline-side.svg`, one `outline-iso-{top,bottom}-{left,right}.svg` per corner, and `outline-bare-parts.svg` (the panel and bare PCB side by side, for the assembly guide's "before you start" shot) are real projections straight from [`ST-02_Levels.step`](../../hardware/ST-02_Levels.step) in `hardware/`, not diagrams. They replace the old product photos in the README, manual and assembly guide. All four isometric corners are generated every run so there's always a fresh set to pick a hero shot from. `outline-iso-top-left.svg` is the one currently used.
 
-**The generator for these doesn't live in this repo.** Unlike the three scripts above, it needs no product-specific logic — point it at any product's STEP files and it works unchanged — so it's kept as one shared tool in the private `schenktronics-business` repo (`claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py`) rather than forked into every product. Regenerate from this repo's root:
+**The generator for these doesn't live in this repo.** Unlike the three scripts above, it needs no product-specific logic (point it at any product's STEP files and it works unchanged), so it's kept as one shared tool in the private `schenktronics-business` repo (`claude/skills/schenktronics-product-docs/assets/drawings/make_outline_svg.py`) rather than forked into every product. Regenerate from this repo's root:
 
 ```sh
 pip install cadquery  # no FreeCAD or other CAD tooling needed
@@ -82,9 +82,9 @@ python3 ~/Products/schenktronics-business/claude/skills/schenktronics-product-do
   --panel hardware/panel/LevelsFaceplate.step \
   --board hardware/levels/Levels.step \
   --out docs/images \
-  --product "Levels"
+  --product "ST-02 Levels"
 ```
 
 (or add a view name at the end, e.g. `... outline-front.svg`, to regenerate just that one)
 
-**This is slow, and not predictably so — read the module docstring in that script before touching it.** Short version: a straight-on view down an axis where many cylindrical parts line up end-on (every jack here, viewed from the front) is a degenerate case for exact-BRep HLR, both slow and prone to rendering a different jack inconsistently on every attempt. The fix that worked — a perspective projection with its apex centered on the model, not tilting the orthographic direction — is explained in full in the script itself. That script is the one copy serving every product, so fixes and lessons belong there, not duplicated into each product repo's own docs. One Levels-specific lesson that *did* belong in the shared script: `outline-bare-parts.svg` initially failed here (`Bnd_Box is void`) because a pot's body overhangs the bare board's edge, which the script's board-matching tolerance was too tight to handle — fixed 2026-10-08 by widening that tolerance (see `find_board_solids` in the script).
+**This is slow, and not predictably so. Read the module docstring in that script before touching it.** Short version: a straight-on view down an axis where many cylindrical parts line up end-on (every jack here, viewed from the front) is a degenerate case for exact-BRep HLR, both slow and prone to rendering a different jack inconsistently on every attempt. The fix that worked, a perspective projection with its apex centered on the model rather than tilting the orthographic direction, is explained in full in the script itself. That script is the one copy serving every product, so fixes and lessons belong there, not duplicated into each product repo's own docs. One Levels-specific lesson that *did* belong in the shared script: `outline-bare-parts.svg` initially failed here (`Bnd_Box is void`) because a pot's body overhangs the bare board's edge, which the script's board-matching tolerance was too tight to handle. It was fixed on 2026-10-08 by widening that tolerance (see `find_board_solids` in the script).
