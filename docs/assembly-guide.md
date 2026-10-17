@@ -1,6 +1,6 @@
-# Levels — Assembly Guide
+# ST-02 Levels: Assembly Guide
 
-Building this kit takes about 20–30 minutes and needs 22 solder joints. It is a good first Eurorack kit.
+This kit takes about 20-30 minutes and 22 solder joints. There are no polarized parts, and the pots only fit one way, so it makes a good first Eurorack build.
 
 **Prefer to watch?** There's a video of the whole build: [Watch me solder together a passive attenuator module!](https://www.youtube.com/watch?v=RKkGsIigaSM)
 
@@ -12,79 +12,89 @@ Building this kit takes about 20–30 minutes and needs 22 solder joints. It is 
 
 Check your kit against this list before you start (full details in the [BOM](BOM.md)):
 
-- [ ] 1 × main PCB
-- [ ] 1 × faceplate
-- [ ] 4 × 3.5 mm jacks with nuts
-- [ ] 2 × 100 kΩ linear potentiometers
-- [ ] 2 × knobs
+- [ ] 1 x main PCB
+- [ ] 1 x faceplate
+- [ ] 4 x 3.5 mm jacks with nuts
+- [ ] 2 x potentiometers
+- [ ] 2 x knobs
 
 ### Tools
 
-- Soldering iron (about 330–360 °C for leaded solder)
+- Soldering iron (about 330-360 °C for leaded solder)
 - Solder
-- Flush cutters
 - Multimeter with continuity (beep) and resistance modes
-- Nut driver or wrench for the jack nuts (optional, but it avoids scratching the panel)
+- Small pliers (optional, for squaring up the jacks)
+- Nut driver or wrench for the jack nuts (optional, but less likely to scratch the panel than pliers)
 
 ## Before you start
 
-- The pots and jacks go on the **front** of the PCB, which is the side with the part outlines (RV1, RV2, J1–J4). The side printed "ST-02 v1.0 / Levels / schenktronics.com" is the back, and you solder there.
-- **Do not solder anything until the faceplate is fitted.** The pot shafts and jacks all pass through the faceplate, which holds them in line while you solder. Parts soldered first can end up crooked in their panel holes.
+- The pots and jacks go on the **front** of the PCB, the side with the part outlines (RV1, RV2, J1-J4). The back is printed "ST-02 v1.1 / Levels", "schenktronics.com", and "CC BY-NC-SA 4.0", and that's the side you solder on.
+- **Don't solder anything until the faceplate is on.** The pot shafts and jacks all pass through the faceplate, which holds them in line while you solder. Parts soldered first can end up crooked in their panel holes.
 
-## Step 1 — Fit the pots and jacks
+### First time soldering?
 
-1. Push the two pots into RV1 and RV2 from the front of the PCB. Each pot fits only one way round: the three pins go in the row of three small holes and the two mounting lugs go in the large holes. The lugs clip into the board and hold the pot in place.
-2. Insert the four jacks into J1–J4 from the front of the PCB. Make sure each jack sits flat, with all three legs through their pads.
+You only need the basics for this kit:
+
+- Touch the iron to the pad and the pin at the same time, then feed solder into the joint, not onto the iron tip. A second or two is usually enough.
+- A good joint is shiny and shaped like a small cone around the pin. A dull, lumpy blob usually means the pad didn't get hot enough. Reheat it, use some flux, and add a touch more solder if necessary.
+- Keep the tip clean and lightly tinned. Wipe it on a damp sponge or brass wool between joints.
+- Remember that solder flows toward the heat.
+
+## Step 1: Fit the pots and jacks
+
+1. Push the two pots into RV1 and RV2 from the front of the PCB. Each pot only fits one way round: the three pins go in the row of three small holes, and the two mounting lugs go in the large holes. The lugs clip into the board and hold the pot in place.
+2. Push the four jacks into J1-J4 from the front of the PCB. Make sure each one sits flat with all three legs through their holes.
 3. Don't solder anything yet.
 
-<img src="images/assembly-1-parts.svg" alt="Front of the PCB with the positions of RV1, RV2 and J1 to J4 highlighted" width="640">
+<img src="images/assembly-1-parts.svg" alt="Front of the PCB with the positions of RV1, RV2, and J1 to J4 highlighted" width="640">
 
-## Step 2 — Fit the faceplate
+## Step 2: Fit the faceplate
 
-1. Remove the nuts (and any washers) from the jacks. The pots have no nuts.
-2. Lower the faceplate over the parts. The "Atten." label goes at the top, over RV1. The pot shafts go through the two larger holes.
-3. Put the jack nuts back on and tighten them **finger-tight** for now.
-4. Check that each pot shaft is centered in its hole, and that the PCB is parallel to the faceplate. The shafts are thinner than their holes, and nothing but the solder will hold them, so centering them now stops the knobs rubbing later. The legs have a little play in their holes, which gives you room to adjust.
-5. Tighten the jack nuts snugly. Do not overtighten them, because that can crack the jack threads or mark the panel.
+1. Take the nuts off the jacks and set them aside. The pots have no nuts.
+2. Lower the faceplate over the parts. The "Levels" label goes at the top, over RV1, and the pot shafts go through the two bigger holes.
+3. Rubber bands or small spring clips can be helpful to hold the faceplate and the board together while you work.
+4. Put the jack nuts back on, finger-tight for now.
+5. Check that each pot shaft is centered in its hole, and that the PCB is parallel to the faceplate. The shafts are thinner than their holes, and only the solder will hold them, so centering them now stops the knobs rubbing later. The legs have a little play in their holes, which gives you room to adjust.
+6. Snug the nuts down. Don't overtighten: it can strip the jack threads or mark the panel.
 
 <img src="images/assembly-2-faceplate.svg" alt="Exploded side view: pots and jacks on the PCB, the faceplate above them, and the jack nuts on top" width="720">
 
-## Step 3 — Solder the pots and jacks
+## Step 3: Solder the pots and jacks
 
-Turn the assembly over and solder from the back of the PCB.
+Turn the whole thing over and solder from the back of the PCB.
 
-1. Tack one leg of each part: the square pad of each jack and the middle pin of each pot. Then check again that the pot shafts are still centered. If one isn't, reheat that joint and adjust.
-2. Solder the remaining pins and pads.
-3. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
-4. Trim any long leads with flush cutters.
+1. Tack one leg of each part: the square pad of each jack, and the middle pin of each pot. Then check again that the pot shafts are still centered. If one isn't, reheat that joint and adjust.
+2. Use a small pair of pliers to rotate the jacks as necessary to align them squarely with each other. This step is optional, but a nice touch.
+3. Solder the remaining pins and pads.
+4. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
 
 <img src="images/assembly-3-solder.svg" alt="Back of the PCB: one pad per part to tack first is filled red, and the other pads, including the pot lugs, are outlined in red" width="640">
 
-Inspect every joint. Each one should be shiny and cone-shaped, with no bridges between neighboring pads.
+Look over every joint before moving on. Each should be shiny and cone-shaped, with no solder bridging neighboring pads.
 
-## Step 4 — Fit the knobs
+## Step 4: Fit the knobs
 
-Push each knob onto its pot shaft. The flat on the shaft sets the knob's position, so there's nothing to align. Check that each knob turns without rubbing on the panel.
+Push each knob onto its pot shaft. The flat on the shaft sets the knob's position, so there's nothing to line up. Check that each knob turns without rubbing on the panel.
 
-## Step 5 — Test
+## Step 5: Test
 
-Test with a multimeter. No power is needed. The easiest way to reach the tip and sleeve of a jack is to plug in a patch cable and probe its plug. "Beep" means continuity mode; "Ω" means resistance mode.
+Use a multimeter. No power is needed. The easiest way to reach a jack's tip and sleeve is to plug in a patch cable and probe its plug. "Beep" means continuity mode, and "Ω" means resistance mode.
 
 | Test | Expected result |
 |------|-----------------|
-| Sleeve of any jack ↔ sleeve of every other jack | Beep |
-| In 1 tip ↔ Out 1 tip, Level 1 fully clockwise | Beep, or a few ohms |
-| Out 1 tip ↔ sleeve, Level 1 fully anticlockwise | Beep, or a few ohms |
-| In 2 tip ↔ Out 2 tip, Level 2 fully clockwise | Beep, or a few ohms |
-| Out 2 tip ↔ sleeve, Level 2 fully anticlockwise | Beep, or a few ohms |
-| Cable in In 1 only: In 1 tip ↔ Out 2 tip, Level 2 fully clockwise | Beep (the normal is working) |
+| Sleeve of any jack <-> sleeve of every other jack | Beep |
+| In 1 tip <-> Out 1 tip, Level 1 fully clockwise | Beep, or a few ohms |
+| Out 1 tip <-> sleeve, Level 1 fully counterclockwise | Beep, or a few ohms |
+| In 2 tip <-> Out 2 tip, Level 2 fully clockwise | Beep, or a few ohms |
+| Out 2 tip <-> sleeve, Level 2 fully counterclockwise | Beep, or a few ohms |
+| Cable in In 1 only: In 1 tip <-> Out 2 tip, Level 2 fully clockwise | Beep (the normal is working) |
 | Same, with a second cable plugged into In 2 | **No beep** (the normal is broken) |
-| In 1 tip ↔ sleeve, nothing in In 2 (Ω) | About 50 kΩ (both pots in parallel). **Near 0 Ω means a short.** Check for solder bridges. |
-| In 2 tip ↔ sleeve, cable in In 2 (Ω) | About 100 kΩ. **Near 0 Ω means a short.** |
+| In 1 tip <-> sleeve, nothing in In 2 (Ω) | About 50 kΩ (both pots in parallel). **Near 0 Ω means a short:** look for a solder bridge. |
+| In 2 tip <-> sleeve, cable in In 2 (Ω) | About 100 kΩ. **Near 0 Ω means a short.** |
 
-## Step 6 — Install
+## Step 6: Install
 
-Install the module in your case with two M3 screws. Usage details are in the [User Manual](manual.md).
+Mount the module in your case with two M3 screws. How to use it is in the [User Manual](manual.md).
 
 <img src="images/outline-iso-top-left.svg" alt="Assembled module, isometric view" width="160">
 
@@ -92,10 +102,10 @@ Install the module in your case with two M3 screws. Usage details are in the [Us
 
 | Symptom | Likely cause |
 |---------|--------------|
-| One jack is dead | That jack has a cold or missing solder joint. Reflow its legs. |
+| One jack is dead | A cold or missing joint on that jack. Reflow all three of its legs. |
 | Out 2 is silent with a cable in In 1 and nothing in In 2 | The normalling contact on J3 (In 2) isn't soldered well. Reflow all three J3 legs. |
 | A knob does nothing, or the output jumps | A bad joint on that pot. Reflow its three pins. |
-| The signal is shorted to ground | There is a solder bridge between a tip pad and a ground pad or lug. |
-| A knob rubs on the panel | The knob is pushed on too far. Pull it out slightly. |
+| A signal is shorted to ground | A solder bridge between a tip pad and a ground pad or lug. |
+| A knob rubs on the panel | It's pushed on too far. Pull it out slightly. |
 | A pot shaft is crooked in its hole | It wasn't centered before soldering. Reheat the pot's pins and lugs, and straighten it. |
-| Full level is a little quieter than the input | This is normal for a passive attenuator. See [Good practice](manual.md#good-practice) in the manual. |
+| Full level is a little quieter than the input | That's normal for a passive attenuator. See [Good practice](manual.md#good-practice) in the manual. |

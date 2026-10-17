@@ -1,10 +1,10 @@
 {
-  "product": "Levels",
-  "pcbVersion": "v1.0",
+  "product": "ST-02 Levels",
+  "pcbVersion": "v1.1",
   "repo": "Schenktronics/ST02-levels",
   "branch": "master",
   "documents": [
-    { "src": "manual.md", "out": "levels-manual.pdf", "title": "User Manual" },
-    { "src": "assembly-guide.md", "out": "levels-assembly-guide.pdf", "title": "Assembly Guide" }
+    { "src": "manual.md", "out": "ST-02_Levels_User_Manual.pdf", "title": "User Manual" },
+    { "src": "assembly-guide.md", "out": "ST-02_Levels_Assembly_Guide.pdf", "title": "Assembly Guide" }
   ]
 }
