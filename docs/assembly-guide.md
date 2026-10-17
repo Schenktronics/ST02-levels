@@ -53,9 +53,9 @@ You only need the basics for this kit:
 1. Take the nuts off the jacks and set them aside. The pots have no nuts.
 2. Lower the faceplate over the parts. The "Levels" label goes at the top, over RV1, and the pot shafts go through the two bigger holes.
 3. Rubber bands or small spring clips can be helpful to hold the faceplate and the board together while you work.
-4. Put the jack nuts back on, finger-tight for now.
-5. Check that each pot shaft is centered in its hole, and that the PCB is parallel to the faceplate. The shafts are thinner than their holes, and only the solder will hold them, so centering them now stops the knobs rubbing later. The legs have a little play in their holes, which gives you room to adjust.
-6. Snug the nuts down. Don't overtighten: it can strip the jack threads or mark the panel.
+4. Put the jack nuts back on and hand-tighten them for now.
+5. Use a small pair of pliers to rotate the jack bodies as necessary to align them squarely with each other. This step is optional, but a nice touch.
+6. Check that each pot shaft is centered in its hole, and that the PCB is parallel to the faceplate. The shafts are thinner than their holes, and only the solder will hold them, so centering them now stops the knobs rubbing later. The legs have a little play in their holes, which gives you room to adjust.
 
 <img src="images/assembly-2-faceplate.svg" alt="Exploded side view: pots and jacks on the PCB, the faceplate above them, and the jack nuts on top" width="720">
 
@@ -64,9 +64,9 @@ You only need the basics for this kit:
 Turn the whole thing over and solder from the back of the PCB.
 
 1. Tack one leg of each part: the square pad of each jack, and the middle pin of each pot. Then check again that the pot shafts are still centered. If one isn't, reheat that joint and adjust.
-2. Use a small pair of pliers to rotate the jacks as necessary to align them squarely with each other. This step is optional, but a nice touch.
-3. Solder the remaining pins and pads.
-4. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
+2. Solder the remaining pins and pads.
+3. Solder the four large mounting-lug pads of the pots. They connect to the ground plane, so they take a little longer to heat. Hold the iron on until the solder flows into the hole.
+4. Snug the nuts down. Don't overtighten: it can strip the jack threads or damage the panel.
 
 <img src="images/assembly-3-solder.svg" alt="Back of the PCB: one pad per part to tack first is filled red, and the other pads, including the pot lugs, are outlined in red" width="640">
 
