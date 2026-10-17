@@ -3,6 +3,8 @@
   "pcbVersion": "v1.1",
   "repo": "Schenktronics/ST02-levels",
   "branch": "master",
+  "qrUrl": "https://schenktronics.com/docs/st-02/",
+  "officialUrl": "schenktronics.com/docs/st-02",
   "docsDir": "../docs",
   "outDir": "../docs/pdf",
   "documents": [
