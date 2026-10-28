@@ -24,11 +24,12 @@ Check your kit against this list before you start (full details in the [BOM](BOM
 - Multimeter with continuity (beep) and resistance modes
 - Small pliers (optional, for squaring up the jacks)
 - Nut driver or wrench for the jack nuts (optional, but less likely to scratch the panel than pliers)
+- 3D-printed solder jig (optional, see [Building with the solder jig](#building-with-the-solder-jig-optional))
 
 ## Before you start
 
 - The pots and jacks go on the **front** of the PCB, the side with the part outlines (RV1, RV2, J1-J4). The back is printed "ST-02 v1.1 / Levels", "schenktronics.com", and "CC BY-NC-SA 4.0", and that's the side you solder on.
-- **Don't solder anything until the faceplate is on.** The pot shafts and jacks all pass through the faceplate, which holds them in line while you solder. Parts soldered first can end up crooked in their panel holes.
+- **Don't solder anything until the faceplate is on.** The pot shafts and jacks all pass through the faceplate, which holds them in line while you solder. Parts soldered first can end up crooked in their panel holes. If you have a 3D printer, the [solder jig](#building-with-the-solder-jig-optional) does that job instead, and you fit the faceplate after soldering.
 
 ### First time soldering?
 
@@ -41,6 +42,19 @@ You only need the basics for this kit:
 - Leaded solder (63/37 or 60/40 tin/lead) is easier to learn with than lead-free: it melts at a lower temperature and flows more easily. Lead-free works fine too, with a slightly hotter iron. Use whichever you prefer.
 - If you use leaded solder, wash your hands when you're done, and don't eat, drink, or smoke while you're soldering. Wipe down your work surface afterward, and keep solder away from kids.
 - Solder somewhere with some airflow, and keep your face to the side of the fumes, not right above them. The fumes primarily come from the flux, not the metals in the solder, but they can irritate your lungs.
+
+## Building with the solder jig (optional)
+
+The jig is a 3D-printable block that holds the two pots and four jacks square and centered while you solder them, in place of the faceplate. Download [ST-02_Solder_Jig.stl](../hardware/jig/ST-02_Solder_Jig.stl) and print it in PLA, pockets facing up, with no supports. It fits the jacks supplied in the kit; panel-mount style jacks won't fit it.
+
+1. Take the nuts off the jacks.
+2. Push the pots and jacks into the front of the PCB, as in Step 1. Don't solder anything yet.
+3. Lower the jig over the parts, pockets down, with the end engraved "RV1" over RV1. Wiggle it until every pot and jack seats in its pocket, with the pot shafts in the round holes.
+4. Turn the whole stack over so the jig sits on the bench and the back of the PCB faces up.
+5. Solder all 22 joints, including the pots' four large mounting-lug pads (see Step 3). The board sits 4 mm above the jig, so the plastic stays clear of the iron.
+6. Lift the board out of the jig.
+
+Then fit the faceplate and nuts (Step 2), and snug the nuts down. Don't overtighten: it can strip the jack threads or damage the panel. Everything is already soldered and centered, so skip Step 3 and go on to fit the knobs (Step 4).
 
 ## Step 1: Fit the pots and jacks
 
